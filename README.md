@@ -10,7 +10,7 @@ Description: Module supporting conversions between numbers and bytes
 
 ## Available conversions in current version:
 
-### IntByteConverter:
+### Class IntByteConverter:
 
 1. Int (0 - 255) <- into ->  1 byte
 2. Int (-127 - 127)  <- into ->  1 byte
