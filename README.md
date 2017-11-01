@@ -1,8 +1,8 @@
 # NBNConverter
 ## Number-Byte-Number Converter
 Language: Kotlin
-
-Module supporting conversions between numbers and bytes
+Last update: 2017.11.01 23:25 GMT
+Description: Module supporting conversions between numbers and bytes
 
 ### Available conversions in current version:
 1. Int (0 - 255) <- into ->  1 byte
@@ -10,6 +10,7 @@ Module supporting conversions between numbers and bytes
 3. Int (0 - 65535) <- into ->  2 bytes
 4. Int (-32767 - 32767)  <- into ->  2 bytes
 5. Int (-2147483647 - 2147483647)  <- into ->  4 bytes
+
 
 ### Functions:
 Ad 1. 
@@ -33,6 +34,13 @@ Ad 5.
  - bytesToSigned2147483647Number
  
  
+ 
+## Instalation
+Clone this repository and import module "nbnconverter" into your own project
+![Installation](https://i.imgur.com/7ggfdn2.png)
+
+
+
 ## License
 ```
 Copyright 2017 Michał Sułek
