@@ -21,24 +21,24 @@ Description: Module supporting conversions between numbers and bytes
 
 ### Functions:
 Ad 1. 
- - unsigned255NumberToByte
- - byteToUnsigned255Number
+ - unsigned255ToByte
+ - toUnsigned255Int
  
 Ad 2. 
- - signed127NumberToByte 
- - byteToSigned127Number
+ - signed127ToByte
+ - toSigned127Number
  
 Ad 3. 
- - unsigned65535NumberToBytes
- - bytesToUnsigned65535Number
+ - unsigned65535ToBytes
+ - toUnsigned65535Number
  
 Ad 4. 
  - signed32767ToBytes
- - bytesToSigned32767Number
+ - toSigned32767Number
  
 Ad 5. 
- - signed2147483647ToBytes
- - bytesToSigned2147483647Number
+ - intToBytes
+ - bytesToInt
  
  
  
