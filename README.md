@@ -3,14 +3,27 @@
 
 Language: Kotlin
 
-Last update: 2017.11.02 14:54 GMT
+Last update: 2017.11.02 23:50 GMT
 
 Description: Module supporting conversions between numbers and bytes
 
 
 ## Available conversions in current version:
 
-### Class IntByteConverter:
+1. Int <-> Bytes
+2. Long <-> Bytes
+
+### Examples
+
+- Call functions from Kotlin, example:
+
+77.unsigned255ToByte
+
+- Call functions from Java, example:
+
+IntByteConverterKt.unsigned255ToByte(77);
+
+### IntByteConverter (Class IntByteConverterKt):
 
 1. Int (0 - 255) <- into ->  1 byte
 2. Int (-127 - 127)  <- into ->  1 byte
@@ -40,6 +53,16 @@ Ad 5.
  - intToBytes
  - bytesToInt
  
+ 
+ ### LongByteConverter (Class LongByteConverterKt):
+
+1. Long (-9223372036854775807 - 9223372036854775807L) <- into ->  8 bytes 
+
+
+### Functions:
+Ad 1. 
+ - longToBytes
+ - bytesToLong
  
  
 ## Instalation
