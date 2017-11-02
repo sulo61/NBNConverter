@@ -7,28 +7,28 @@ import static org.junit.Assert.*;
 public class IntByteConverterTest {
 
     private int convertUnsigned255Number(int inNumber) {
-        byte b = IntByteConverter.Companion.unsigned255NumberToByte(inNumber);
-        return IntByteConverter.Companion.byteToUnsigned255Number(b);
+        byte b = IntByteConverterKt.unsigned255NumberToByte(inNumber);
+        return IntByteConverterKt.byteToUnsigned255Number(b);
     }
 
     private int convertSigned127Number(int inNumber) {
-        byte b = IntByteConverter.Companion.signed127NumberToByte(inNumber);
-        return IntByteConverter.Companion.byteToSigned127Number(b);
+        byte b = IntByteConverterKt.signed127NumberToByte(inNumber);
+        return IntByteConverterKt.byteToSigned127Number(b);
     }
 
     private int convertUnsigned65535Number(int inNumber) {
-        byte[] b = IntByteConverter.Companion.unsigned65535NumberToBytes(inNumber);
-        return IntByteConverter.Companion.bytesToUnsigned65535Number(b);
+        byte[] b = IntByteConverterKt.unsigned65535NumberToBytes(inNumber);
+        return IntByteConverterKt.bytesToUnsigned65535Number(b);
     }
 
     private int convertSigned32767Number(int inNumber) {
-        byte[] b = IntByteConverter.Companion.signed32767ToBytes(inNumber);
-        return IntByteConverter.Companion.bytesToSigned32767Number(b);
+        byte[] b = IntByteConverterKt.signed32767ToBytes(inNumber);
+        return IntByteConverterKt.bytesToSigned32767Number(b);
     }
 
     private int convertSigned2147483647Number(int inNumber) {
-        byte[] b = IntByteConverter.Companion.signed2147483647ToBytes(inNumber);
-        return IntByteConverter.Companion.bytesToSigned2147483647Number(b);
+        byte[] b = IntByteConverterKt.signed2147483647ToBytes(inNumber);
+        return IntByteConverterKt.bytesToSigned2147483647Number(b);
     }
 
     @Test
