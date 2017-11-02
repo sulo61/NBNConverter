@@ -3,7 +3,7 @@
 
 Language: Kotlin
 
-Last update: 2017.11.01 23:26 GMT
+Last update: 2017.11.02 14:54 GMT
 
 Description: Module supporting conversions between numbers and bytes
 
