@@ -16,12 +16,14 @@ Description: Module supporting conversions between numbers and bytes
 ### Examples
 
 - Call functions from Kotlin, example:
-
+```
 77.unsigned255ToByte
+```
 
 - Call functions from Java, example:
-
+```
 IntByteConverterKt.unsigned255ToByte(77);
+```
 
 ### IntByteConverter (Class IntByteConverterKt):
 
