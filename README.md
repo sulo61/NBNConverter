@@ -26,15 +26,15 @@ Ad 1.
  
 Ad 2. 
  - signed127ToByte
- - toSigned127Number
+ - toSigned127Int
  
 Ad 3. 
  - unsigned65535ToBytes
- - toUnsigned65535Number
+ - toUnsigned65535Int
  
 Ad 4. 
  - signed32767ToBytes
- - toSigned32767Number
+ - toSigned32767Int
  
 Ad 5. 
  - intToBytes

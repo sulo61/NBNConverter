@@ -36,7 +36,7 @@ fun Int.signed127ToByte(): Byte {
     return ((Math.abs(this) and INT_MASK_ALL_WITHOUT_LAST_BIT) or signMask).toByte()
 }
 
-fun Byte.toSigned127Number(): Int {
+fun Byte.toSigned127Int(): Int {
     val sign = (this.toInt() and INT_MASK_LAST_BIT) != 0
     var value = convertByteToInt((this.toInt() and INT_MASK_ALL_WITHOUT_LAST_BIT).toByte())
     if (sign) {
@@ -56,7 +56,7 @@ fun Int.unsigned65535ToBytes(): ByteArray {
     return byteArrayOf(firstByte, secondByte)
 }
 
-fun ByteArray.toUnsigned65535Number(): Int {
+fun ByteArray.toUnsigned65535Int(): Int {
     if (this.isEmpty() or (this.size > 2)) {
         throw Exception("Wrong array size, should have exactly 2 bytes")
     }
@@ -79,7 +79,7 @@ fun Int.signed32767ToBytes(): ByteArray {
     return byteArrayOf(firstByte.toByte(), secondByte.toByte())
 }
 
-fun ByteArray.toSigned32767Number(): Int {
+fun ByteArray.toSigned32767Int(): Int {
     if (this.isEmpty() or (this.size > 2)) {
         throw Exception("Wrong array size, should have exactly 2 bytes")
     }

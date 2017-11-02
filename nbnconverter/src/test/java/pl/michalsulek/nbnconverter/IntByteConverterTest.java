@@ -13,17 +13,17 @@ public class IntByteConverterTest {
 
     private int convertSigned127Number(int inNumber) {
         byte b = IntByteConverterKt.signed127ToByte(inNumber);
-        return IntByteConverterKt.toSigned127Number(b);
+        return IntByteConverterKt.toSigned127Int(b);
     }
 
     private int convertUnsigned65535Number(int inNumber) {
         byte[] b = IntByteConverterKt.unsigned65535ToBytes(inNumber);
-        return IntByteConverterKt.toUnsigned65535Number(b);
+        return IntByteConverterKt.toUnsigned65535Int(b);
     }
 
     private int convertSigned32767Number(int inNumber) {
         byte[] b = IntByteConverterKt.signed32767ToBytes(inNumber);
-        return IntByteConverterKt.toSigned32767Number(b);
+        return IntByteConverterKt.toSigned32767Int(b);
     }
 
     private int convertSigned2147483647Number(int inNumber) {
